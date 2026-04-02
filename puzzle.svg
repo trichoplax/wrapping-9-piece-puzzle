@@ -50,18 +50,6 @@
             <use href="#single-straight" transform="rotate(90 150 150)" />
             <use href="#single-straight" transform="rotate(180 150 150)" />
         </g>
-        <g id="double-straight">
-            <line x1="50" y1="0" x2="50" y2="100" stroke="#9933ee" stroke-width="30" />
-            <line x1="50" y1="0" x2="50" y2="100" stroke="#bbddff" stroke-width="20" />
-        </g>
-        <g id="single-behind-double">
-            <use href="#single-straight" transform="rotate(90 50 50)" />
-            <use href="#double-straight" />
-        </g>
-        <g id="single-behind-single">
-            <use href="#single-straight" transform="rotate(90 50 50)" />
-            <use href="#single-straight" />
-        </g>
     </defs>
     <rect x="0" y="0" width="900" height="900" fill="url(#grid)" />
     <use href="#both-curves-plus-straight" />
