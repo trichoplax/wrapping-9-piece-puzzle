@@ -1,0 +1,76 @@
+<svg version="1.1"
+    width="900"
+    height="900"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern patternUnits="userSpaceOnUse" x="0" y="0" width="300" height="300" id="grid">
+            <rect x="0" y="0" width="300" height="300" fill="none" stroke="grey"  stroke-width="10"/>
+        </pattern>
+        <g id="small-curve">
+            <path d="M 200 300 a 100 100 0 0 1 100 -100" fill="none" stroke="#44bb44" stroke-width="45" />
+            <path d="M 200 300 a 100 100 0 0 1 100 -100" fill="none" stroke="#ffffff" stroke-width="15" />
+        </g>
+        <g id="large-curve">
+            <path d="M 100 300 a 200 200 0 0 1 200 -200" fill="none" stroke="#44bb44" stroke-width="45" />
+            <path d="M 100 300 a 200 200 0 0 1 200 -200" fill="none" stroke="#ffffff" stroke-width="15" />
+        </g>
+        <g id="single-straight">
+            <line x1="100" y1="0" x2="100" y2="300" stroke="#44bb44" stroke-width="45" />
+            <line x1="100" y1="0" x2="100" y2="300" stroke="#ffffff" stroke-width="15" />
+        </g>
+        <g id="both-curves-plus-straight">
+            <use href="#small-curve" transform="rotate(180,150,150)" />
+            <use href="#large-curve" />
+            <use href="#single-straight" transform="rotate(270,150,150)" />
+        </g>
+        <g id="high-straight">
+            <use href="#single-straight" transform="rotate(90,150,150)" />
+        </g>
+        <g id="nested-curves">
+            <use href="#small-curve" transform="rotate(90,150,150)" />
+            <use href="#large-curve" transform="rotate(90,150,150)" />
+        </g>
+        <g id="two-small-curves">
+            <use href="#small-curve" transform="rotate(180,150,150)" />
+            <use href="#small-curve" transform="rotate(270,150,150)" />
+        </g>
+        <g id="two-small-curves-plus-straight">
+            <use href="#two-small-curves" transform="rotate(90,150,150)" />
+            <use href="#single-straight" />
+        </g>
+        <g id="both-curves">
+            <use href="#small-curve" transform="rotate(90 150 150)" />
+            <use href="#large-curve" transform="rotate(270 150 150)" />
+        </g>
+        <g id="crossed-curves">
+            <use href="#large-curve" transform="rotate(90 150 150)" />
+            <use href="#large-curve" transform="rotate(180 150 150)" />
+        </g>
+        <g id="crossed-straights">
+            <use href="#single-straight" transform="rotate(90 150 150)" />
+            <use href="#single-straight" transform="rotate(180 150 150)" />
+        </g>
+        <g id="double-straight">
+            <line x1="50" y1="0" x2="50" y2="100" stroke="#9933ee" stroke-width="30" />
+            <line x1="50" y1="0" x2="50" y2="100" stroke="#bbddff" stroke-width="20" />
+        </g>
+        <g id="single-behind-double">
+            <use href="#single-straight" transform="rotate(90 50 50)" />
+            <use href="#double-straight" />
+        </g>
+        <g id="single-behind-single">
+            <use href="#single-straight" transform="rotate(90 50 50)" />
+            <use href="#single-straight" />
+        </g>
+    </defs>
+    <rect x="0" y="0" width="900" height="900" fill="url(#grid)" />
+    <use href="#both-curves-plus-straight" />
+    <use href="#high-straight" x="300" />
+    <use href="#nested-curves" x="600" />
+    <use href="#two-small-curves-plus-straight" y="300" />
+    <use href="#both-curves" x="300" y="300" />
+    <use href="#crossed-curves" x="600" y="300" />
+    <use href="#crossed-straights" y="600" />
+    <use href="#two-small-curves" x="300" y="600" />
+    <use href="#crossed-curves" x="600" y="600" />
+</svg>
