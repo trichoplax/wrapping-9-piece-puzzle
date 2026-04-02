@@ -7,15 +7,15 @@
             <rect x="0" y="0" width="300" height="300" fill="none" stroke="grey"  stroke-width="10"/>
         </pattern>
         <g id="small-curve">
-            <path d="M 200 300 a 100 100 0 0 1 100 -100" fill="none" stroke="#44bb44" stroke-width="45" />
+            <path d="M 200 300 a 100 100 0 0 1 100 -100" fill="none" stroke="#55aa35" stroke-width="45" />
             <path d="M 200 300 a 100 100 0 0 1 100 -100" fill="none" stroke="#ffffff" stroke-width="15" />
         </g>
         <g id="large-curve">
-            <path d="M 100 300 a 200 200 0 0 1 200 -200" fill="none" stroke="#44bb44" stroke-width="45" />
+            <path d="M 100 300 a 200 200 0 0 1 200 -200" fill="none" stroke="#55aa35" stroke-width="45" />
             <path d="M 100 300 a 200 200 0 0 1 200 -200" fill="none" stroke="#ffffff" stroke-width="15" />
         </g>
         <g id="single-straight">
-            <line x1="100" y1="0" x2="100" y2="300" stroke="#44bb44" stroke-width="45" />
+            <line x1="100" y1="0" x2="100" y2="300" stroke="#55aa35" stroke-width="45" />
             <line x1="100" y1="0" x2="100" y2="300" stroke="#ffffff" stroke-width="15" />
         </g>
         <g id="both-curves-plus-straight">
